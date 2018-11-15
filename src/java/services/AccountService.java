@@ -28,4 +28,16 @@ public class AccountService {
 
         return null;
     }
+    
+    public User getUser(String username) {
+        try {
+            UserDB userDB = new UserDB();
+            User user = userDB.getUser(username);
+
+        } catch (Exception e) {
+
+        }
+
+        return null;
+    }
 }
